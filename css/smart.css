@@ -1,0 +1,83 @@
+body {
+  font-family:  'Lato', sans-serif;
+  font-size: 4em;
+  background-color: #68d2df;
+  color: #fff;
+}
+
+.section {
+  text-align:center;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.slide {
+  text-align:center;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#section_eesyapp {
+  background-image: url(/img/eesyapp2.png);
+}
+
+#section_smartwindow {
+  background-image: url(/img/smartwindow.png);
+  background-color: #fff;
+  background-size: normal;
+  color: #1f1f1f;
+}
+
+#section_thewho {
+  background-image: url(/img/thewho.jpg);
+  background-color: #fff;
+
+}
+
+#section_thewhat {
+  background-color: black;
+  color: LawnGreen;
+  font-family: courier;
+}
+
+#slide_hardware {
+  background-image: url(/img/nodemcu.jpg);
+  color: #1f1f1f;
+}
+
+#slide_terminal { 
+  background-image: url(/img/terminal.gif)
+}
+
+#slide_database { 
+  background-image: url(/img/database.jpg)
+}
+
+div.fp-controlArrow.fp-prev { 
+    display: none; 
+}
+
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -30.5px;
+}
+.fp-controlArrow.fp-prev {
+    left: 10px;
+    width: 0;
+    border-width: 30.5px 24px 30.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 10px;
+    border-width: 30.5px 0 30.5px 24px;
+    border-color: transparent transparent transparent #fff;
+}
+

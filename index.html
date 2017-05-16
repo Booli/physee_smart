@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PHYSEE SMART DEVELOPMENT</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/smart.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <div>
+        <img src="http://static1.squarespace.com/static/56d44c7ec2ea51b1521632da/t/56d872e3c6fc08fe1254f3c6/1493671413393/?format=500w" alt="">
+      </div>
+    </div>
+    <div class="section">
+      <div>Smart Development</div>
+      <div style="font-family: monospace;">Realise your impact</div>
+    </div>
+    <div class="section" id="section_thewho">
+      <div>
+        <div>First the who...</div>
+      </div> 
+    </div>
+    <div class="section">
+      Check &check;
+    </div>
+    <div id="section_thewhat" class="section">
+      <div>Then the what...</div>
+    </div>
+    <div id="section_smartwindow" class="section">
+      <div class="topic">Hardware</div>
+      <div class="topic">Back end</div>
+      <div class="topic">Front end</div>
+      <div class="topic">Business</div>
+    </div>
+    <div class="section">
+      <div class="slide">Hardware</div>
+      <div class="slide">PowerModule</div>
+      <div class="slide">SmartModule</div>
+      <div id="slide_hardware" class="slide" ></div>
+      <div class="slide">EESYBox</div>
+    </div>
+    <div class="section">
+      <div class="slide">Back end</div>
+      <div id="slide_terminal" class="slide"></div>
+      <div id="slide_database" class="slide"></div>
+      <div class="slide">API</div>
+    </div>
+    <div class="section">
+      <div class="slide">Front End</div>
+      <div class="slide" id="section_eesyapp"></div>
+      <div class="slide">Data visualization</div>
+      <div class="slide">User registration</div>
+    </div>
+    <div class="section">
+      <div class="slide">Business</div>
+      <div class="slide">Tooling</div>
+      <div class="slide">Growing</div>
+    </div>
+    <div class="section">
+      <div class="slide">Roadmap</div>
+      <div class="slide">Proof of Concepts</div>
+      <div class="slide">
+        <h1>Q3</h1>
+        <div>Autonomous Smart Control</div>
+      </div>
+      <div class="slide">
+        <h1>Q4</h1> 
+        <div>Building Management System integration</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      verticalCentered: true,
+      sectionsColor: ['whitesmoke' ],
+      afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+    var loadedSlide = $(this);
+
+    //after loading the 0th (first) slide
+    if (slideIndex == 0){
+        $('div.fp-controlArrow.fp-prev').hide()
+    } else {
+        $('div.fp-controlArrow.fp-prev').show()
+    }
+ }
+    });
+  });
+</script>
+</html>
